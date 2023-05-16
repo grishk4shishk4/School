@@ -17,6 +17,8 @@ print(f'Быки и коровы')
 def usr_number():
     while True:
         Usr_Num = str(input('Введите число: '))
+        # почему если условие из 21 строки стоит первым ошибок нету
+        # а если его сдвинуть на 5 место - они появляются
         if len(Usr_Num) == 4 and \
             48 <= ord(Usr_Num[0]) <= 57 and \
             48 <= ord(Usr_Num[1]) <= 57 and \
@@ -25,7 +27,8 @@ def usr_number():
 
             return Usr_Num
         else:
-            print('некоректное число')
-
+            print('Ошибка: Некоректное число')
+'''
 for i in range(5):
     usr_number()
+'''
