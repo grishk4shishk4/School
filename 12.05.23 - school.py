@@ -17,10 +17,10 @@ print(f'Быки и коровы')
 def usr_number():
     while True:
         Usr_Num = str(input('Введите число: '))
-        if ord(Usr_Num[0]) >= 48 and ord(Usr_Num[0]) <= 57 and \
-            ord(Usr_Num[1]) >= 48 and ord(Usr_Num[1]) <= 57 and \
-            ord(Usr_Num[2]) >= 48 and ord(Usr_Num[2]) <= 57 and \
-            ord(Usr_Num[3]) >= 48 and ord(Usr_Num[3]) <= 57:
+        if 48 <= ord(Usr_Num[0]) <= 57 and \
+            48 <= ord(Usr_Num[1]) <= 57 and \
+            48 <= ord(Usr_Num[2]) <= 57 and \
+            48 <= ord(Usr_Num[3]) <= 57:
             return Usr_Num
         else:
             print('некоректное число')
