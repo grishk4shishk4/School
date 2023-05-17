@@ -24,7 +24,6 @@ def usr_number():
             48 <= ord(Usr_Num[1]) <= 57 and \
             48 <= ord(Usr_Num[2]) <= 57 and \
             48 <= ord(Usr_Num[3]) <= 57:
-
             return Usr_Num
         else:
             print('Ошибка: Некоректное число')
@@ -32,3 +31,23 @@ def usr_number():
 for i in range(5):
     usr_number()
 '''
+attempt = 0
+b = 0
+ai = str(rand_number())
+
+while b < 4:
+    attempt += 1
+    b = 0
+    k = 0
+    user = str(usr_number())
+    for i in range(4):
+        if user[i] == ai[i]:
+            b += 1
+        elif user[i] == ai[0] or \
+                user[i] == ai[1] or \
+                user[i] == ai[2] or \
+                user[i] == ai[3]:
+            k += 1
+    print(user, ai)
+    print(b, k)
+print(f"Пользователь победил за {attempt} ходов")
