@@ -14,6 +14,7 @@ for i in range(1, 150):
     if (1111/i) % 1 == 0:
         print(i, 1111/i)
 '''
+'''
 import sys
 sys.setrecursionlimit(3000**2)
 
@@ -52,3 +53,14 @@ def a(x, y):
 
 
 a(x1, y1)
+'''
+a = 0
+summ = 1
+while 3000 % summ != 0:
+    if summ + 71 > 3000:
+        summ = summ - 3000
+        a += 1
+    else:
+        summ += 71
+        a += 1
+print()

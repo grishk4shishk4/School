@@ -9,12 +9,12 @@ def symbs_print(symbs):
     print(end='\n')
 
 symbs_print(symbs)
-def user_number():
+def user_number(usr):
     while True:
-        n = input('Введите число: ')
+        n = input(f'Ход пользователя - {usr}.|Введите число: ')
         try:
             if 48 < ord(n[0]) < 52 and 48 < ord(n[1]) < 52 and len(n) == 2:
-                if symbs[ int(n[0]) - 1 ][ int(n[1]) - 1 ] == 0:
+                if symbs[int(n[0]) - 1][int(n[1]) - 1] == 0:
                     print(n)
                     return n
                 else:
@@ -26,24 +26,37 @@ def user_number():
 
 def user_1_take():
     global symbs
-    u_round = user_number()
+    u_round = user_number(1)
     symbs[int(u_round[0]) - 1][int(u_round[1]) - 1] = 1
     symbs_print(symbs)
-    if winner_check(1, symbs) == 1:
-        return None
+    if winner_check(1, symbs) == True:
+        return True
 
 def user_2_take():
-    pass
+    global symbs
+    u_round = user_number(2)
+    symbs[int(u_round[0]) - 1][int(u_round[1]) - 1] = 2
+    symbs_print(symbs)
+    if winner_check(2, symbs) == True:
+        return True
 
 def winner_check(user_num, symbs):
-
     for i in range(3):
         if symbs[i].count(user_num) == 3:
-            return 11
+            return True
+    for i in range(3):
+        if symbs[0][i] + symbs[1][i] + symbs[2][i] == user_num * 3:
+            return True
+    if symbs[0][0] + symbs[1][1] + symbs[2][2] == user_num * 3:
+        return True
+    if symbs[2][0] + symbs[1][1] + symbs[0][2] == user_num * 3:
+        return True
+#надо переписать проверку победителя
 
-    pass
-
-user_1 = []
-user_2 = []
-for i in range(10):
-    user_1_take()
+while True:
+    if user_1_take() == True:
+        print('Пользователь 1 победил!')
+        break
+    if user_2_take() == True:
+        print('Пользователь 2 победил!')
+        break
