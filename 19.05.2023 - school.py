@@ -1,3 +1,4 @@
+#'''
 import keyboard
 
 symbs = [[0, 0, 0], [0, 0, 0],[0, 0, 0]]
@@ -41,17 +42,22 @@ def user_2_take():
         return True
 
 def winner_check(user_num, symbs):
+    d_list = []
+    u_list = [symbs[0, 2], symbs[1, 1], symbs[2, 0]]
     for i in range(3):
         if symbs[i].count(user_num) == 3:
             return True
-    for i in range(3):
-        if symbs[0][i] + symbs[1][i] + symbs[2][i] == user_num * 3:
+        elif list(map(lambda x: x[i], symbs)).count(user_num) == 3:
             return True
-    if symbs[0][0] + symbs[1][1] + symbs[2][2] == user_num * 3:
+        d_list.append(symbs[i][i])
+    if d_list.count(user_num) == 3 or u_list.count(user_num) == 3:
         return True
-    if symbs[2][0] + symbs[1][1] + symbs[0][2] == user_num * 3:
-        return True
-#надо переписать проверку победителя
+
+    # if symbs[0][0] + symbs[1][1] + symbs[2][2] == user_num * 3:
+    #     return True
+    # if symbs[2][0] + symbs[1][1] + symbs[0][2] == user_num * 3:
+    #     return True
+#надо переписать проверку победителя по диагонали
 
 while True:
     if user_1_take() == True:
@@ -60,3 +66,7 @@ while True:
     if user_2_take() == True:
         print('Пользователь 2 победил!')
         break
+#'''
+# num_list = [[1, 1, 2],[3, 4, 6], [5, 5, 4]]
+# for i in range(3):
+#     if list(map(lambda x: x[i], num_list)).count(1) == 1:
