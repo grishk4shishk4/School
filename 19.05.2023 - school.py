@@ -67,6 +67,3 @@ while True:
         print('Пользователь 2 победил!')
         break
 #'''
-# num_list = [[1, 1, 2],[3, 4, 6], [5, 5, 4]]
-# for i in range(3):
-#     if list(map(lambda x: x[i], num_list)).count(1) == 1:
