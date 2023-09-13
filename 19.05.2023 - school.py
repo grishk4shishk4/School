@@ -16,14 +16,14 @@ def user_number(usr):
         try:
             if 48 < ord(n[0]) < 52 and 48 < ord(n[1]) < 52 and len(n) == 2:
                 if symbs[int(n[0]) - 1][int(n[1]) - 1] == 0:
-                    print(n)
+                    print(f'Строка {n[0]}, ряд {n[1]}')
                     return n
                 else:
                     print('Эта клетка уже занята')
             else:
-                print('1Неверное число')
+                print('Неверное число2')
         except:
-            print('2Неверное число')
+            print('Неверное число1')
 
 def user_1_take():
     global symbs
@@ -42,16 +42,20 @@ def user_2_take():
         return True
 
 def winner_check(user_num, symbs):
-    d_list = []
-    u_list = [symbs[0, 2], symbs[1, 1], symbs[2, 0]]
     for i in range(3):
         if symbs[i].count(user_num) == 3:
             return True
         elif list(map(lambda x: x[i], symbs)).count(user_num) == 3:
             return True
-        d_list.append(symbs[i][i])
-    if d_list.count(user_num) == 3 or u_list.count(user_num) == 3:
+    if symbs[0][0] == user_num and symbs[1][1] == user_num and symbs[2][2] == user_num:
         return True
+    elif symbs[0][2] == user_num and symbs[1][1] == user_num and symbs[0][2] == user_num:
+        return True
+    else:
+        return False
+    #     d_list.append(symbs[i][i])
+    # if d_list.count(user_num) == 3 or u_list.count(user_num) == 3:
+    #     return True
 
     # if symbs[0][0] + symbs[1][1] + symbs[2][2] == user_num * 3:
     #     return True

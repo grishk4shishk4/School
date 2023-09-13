@@ -5,7 +5,7 @@ for N in range(9999, 1000, -1):
         print(N)
         summ.append(int(str(N[u]) + (str(N[u + 1]))))
 '''
-'''
+#'''
 numbers = [2, 3]
 end = int(input())
 
@@ -18,8 +18,8 @@ for i in range(5, end, 2):
     if counter == 0:
         numbers.append(i)
 print(numbers)
-print(len(numbers))
-'''
+print(len(numbers) + 1)
+#'''
 '''
 import random
 a = []
@@ -109,7 +109,7 @@ for i in range(1, 63):
         print(i)
         break
 '''
-
+'''
 import random
 
 n = 7
@@ -121,7 +121,7 @@ for i in range(n):
 
         print(l[i][u], end=' ')
     print()
-
+'''
 '''
 1
         if i % 2 == 1:
