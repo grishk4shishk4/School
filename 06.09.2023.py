@@ -92,7 +92,6 @@ for IDi, i in enumerate(num_list):
 
 # a = max(num_list17, num_list2, num_list34)
 # print(a)
-S = nums2 * nums17 + nums34(len(num_list) - nums34) + (nums34 * (nums34 - 1)) / 2
+S = nums2 * nums17 + nums34 * (len(num_list) - nums34) + (nums34 * (nums34 - 1)) / 2
 print(S)
 #'''
-open('C:\Users\Gregoriy Mukhin\Downloads\тайминги в нс')
