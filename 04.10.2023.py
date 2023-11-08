@@ -1,8 +1,8 @@
 import random
 
 num_list = []
-for i in range(15):
-    num_list.append(random.randint(1, 15))
+for i in range(12):
+    num_list.append(random.randint(1, 12))
 
 counter = 0
 

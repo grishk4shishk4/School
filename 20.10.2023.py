@@ -7,5 +7,3 @@
 #                     counter += 1
 # print(counter)
 
-for i in range()
-    print(int(i, 3))
