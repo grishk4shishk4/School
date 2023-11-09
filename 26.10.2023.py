@@ -14,16 +14,16 @@
 #                     b = 0'''
 #                 print(w, x, y, z, int(f1), int(f2))
 
-# a = []
-# for N in range(1_000_000, 900_000_000):
-#     n1 = bin(N)[2:]
-#     n1 += bin(N % 3)[2:]
-#     n1 += bin(int(n1, 2) % 5)[2:]
-#     if int(n1, 2) > 1_222_222_222 and int(n1, 2) < 1_555_555_666:
-#         if a.count(n1) == 0:
-#             a.append(n1)
-#
-# print(len(n1))
+a = []
+for N in range(35_000_000, 50_000_000):
+    n1 = bin(N)[2:]
+    n1 += bin(N % 3)[2:]
+    n1 += bin(int(n1, 2) % 5)[2:]
+    if int(n1, 2) > 1_222_222_222 and int(n1, 2) < 1_555_555_666:
+        if a.count(n1) == 0:
+            a.append(n1)
+
+print(len(a))
 
 
 
