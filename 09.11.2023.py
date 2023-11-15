@@ -61,5 +61,3 @@
 # for i in range(1, 108):
 #     if f(i, 1) == 1:
 #         print(i)
-
-
