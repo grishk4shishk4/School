@@ -14,6 +14,7 @@ def f(x, y, h):
             return f(x, y - 1, h + 1) or f(x + 1, y, h + 1)
 
 
+
 for i in range(11, 100):
     if f(10, i, 1) == 1:
         print(i)
