@@ -1,7 +1,10 @@
 import math
 import random
-a =  random.randint(100, 1000)
+
+
+a = random.randint(100, 1000)
 a1 = random.randint(100, 1000)
+
 
 def task4(x):
     b = [2, 3]
