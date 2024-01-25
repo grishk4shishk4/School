@@ -22,9 +22,31 @@
 #
 # }
 # print(dic['nomer2'])
-
+'''
 a = lambda x: x ** 2
 print(a(2))
 num_list = range(20)
 map(a, num_list)
 print(num_list)
+'''
+
+# a = open('C:/Users/Gregoriy Mukhin/Downloads/24_demo.txt').readline()
+#
+# counter = 0
+# max_len = 0
+# for i in range(len(a)):
+#     if (a[i] == 'X' and counter%3 == 0) or (a[i] == 'Y' and counter%3 == 1) or (a[i] == 'Z' and counter%3 == 2):
+#         counter += 1
+#         max_len = max(max_len, counter)
+#     elif a[i] == 'X':
+#         counter = 1
+#     else:
+#         counter = 0
+# print(max_len)
+#
+
+
+a = open
+
+
+# 5, 6, 7, 16, 18, 29, 25, 27, 35
