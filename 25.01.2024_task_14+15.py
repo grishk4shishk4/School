@@ -68,9 +68,12 @@
 # https://kompege.ru/task
 # 828
 
-a = 7 ** 103 + 49 ** 98 - 7 ** 120 - 7 * 33
-x = ''
-while a > 0:
-    x = (str(a % 7)) + x
-    a //= 7
-for y in range()
+# a = 7 ** 103 + 49 ** 98 - 7 ** 120 - 7 * 33
+# x = ''
+# while a > 0:
+#     x = (str(a % 7)) + x
+#     a //= 7
+# for y in range()
+#
+# for i in range(15, 31):
+#     print(bin(i), bin(11), i&11)
