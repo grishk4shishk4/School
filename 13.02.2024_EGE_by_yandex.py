@@ -102,3 +102,63 @@
 # print(counter, max_num)
 
 
+# # 19
+#
+# def f(x, y, h):
+#     if (x + y >= 189) and h < 2:
+#         return 0
+#     if (x + y < 189) and h == 2:
+#         return 0
+#     if (x + y >= 189) and h == 2:
+#         return 1
+#     else:
+#         if h % 2 == 1:
+#             return f(x + y, y, h + 1) or f(x, y + x, h + 1) or f(max(x, y), max(x, y), h + 1)
+#         else:
+#             return f(x + y, y, h + 1) or f(x, y + x, h + 1) or f(max(x, y), max(x, y), h + 1)
+#
+# for i in range(189):
+#     if f(5, i, 0) == 1:
+#         print(i)
+#         break
+
+
+# 20
+
+def f(x, y, h):
+    if (x + y >= 189) and h == 2:
+        return 1
+    elif (x + y >= 189) and h < 2:
+        return 0
+    elif (x + y < 189) and h == 2:
+        return 0
+    else:
+        if h % 2 == 0:
+            return g(x + y, y, h + 1) and g(x, y + x, h + 1) and g(max(x, y), max(x, y), h + 1)
+        else:
+            return g(x + y, y, h + 1) or g(x, y + x, h + 1) or g(max(x, y), max(x, y), h + 1)
+
+
+def g(x, y, h):
+    if (x + y >= 189) and (h == 4 or h == 2):
+        return 1
+    elif (x + y >= 189) and h < 4:
+        return 0
+    elif (x + y < 189) and h == 4:
+        return 0
+
+    else:
+        if h % 2 == 0:
+            return g(x + y, y, h + 1) and g(x, y + x, h + 1) and g(max(x, y), max(x, y), h + 1)
+        else:
+            return g(x + y, y, h + 1) or g(x, y + x, h + 1) or g(max(x, y), max(x, y), h + 1)
+
+
+for i in range(189):
+    if f(5, i, 0) == 1:
+        print(i)
+print('----------')
+for i in range(189):
+    if g(5, i, 0) == 1:
+        print(i)
+        break
