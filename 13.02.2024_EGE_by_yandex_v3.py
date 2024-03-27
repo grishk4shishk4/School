@@ -1,3 +1,5 @@
+# https://education.yandex.ru/ege/variants/a78bf7c8-e640-46fd-9e7c-c504952c4905/task/16
+
 # # 2
 # print(f'w x y z f1')
 # for w in range(2):
@@ -39,9 +41,8 @@
 #
 #     print(i)
 #     if len(a) < 20:
-#         c = i
 #         break
-# print(c)
+# print(i)
 # # 15
 
 
@@ -162,3 +163,4 @@ for i in range(189):
     if g(5, i, 0) == 1:
         print(i)
         break
+

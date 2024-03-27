@@ -22,13 +22,13 @@
 #
 # }
 # print(dic['nomer2'])
-'''
-a = lambda x: x ** 2
-print(a(2))
-num_list = range(20)
-map(a, num_list)
-print(num_list)
-'''
+# '''
+# a = lambda x: x ** 2
+# print(a(2))
+# num_list = range(20)
+# map(a, num_list)
+# print(num_list)
+# '''
 
 # a = open('C:/Users/Gregoriy Mukhin/Downloads/24_demo.txt').readline()
 #
@@ -44,9 +44,16 @@ print(num_list)
 #         counter = 0
 # print(max_len)
 #
+#
+#
+# a = open
+#
+#
+# # 5, 6, 7, 16, 18, 29, 25, 27, 35
 
 
-a = open
-
-
-# 5, 6, 7, 16, 18, 29, 25, 27, 35
+def f(x, y):
+    return (False or x == y)
+for i in range(-10, 10):
+    for u in range(-5, 5):
+        print(i, u, f(i, u))
