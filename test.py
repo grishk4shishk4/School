@@ -52,8 +52,24 @@
 # # 5, 6, 7, 16, 18, 29, 25, 27, 35
 
 
-def f(x, y):
-    return (False or x == y)
-for i in range(-10, 10):
-    for u in range(-5, 5):
-        print(i, u, f(i, u))
+# def f(x, y):
+#     return (False or x == y)
+# for i in range(-10, 10):
+#     for u in range(-5, 5):
+#         print(i, u, f(i, u))
+
+
+#
+# for a in range(1000, 5000):
+#     b = 0
+#     c = 0
+#     for i in str(a):
+#         b += int(i)
+#     for i in str(b):
+#         c += int(i)
+#     if a + b + c == 2022:
+#         print(a, b, c)
+
+
+a = 'abcdefgt'
+print(a[:int(len(a)/2//1) + 2], a[int(len(a)/2//1) + 1::-1])

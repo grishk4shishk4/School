@@ -70,12 +70,12 @@
 # 26
 # 600 -  первая строка
 
-def f(x, a):
-    pass
-    for i in range(a.)
-
-a = sorted([int(i) for i in open('C:/Users/Gregoriy Mukhin/Downloads/26 (3).txt')])
-print(a)
-
-
-for i in range(sum(a)):
+# def f(x, a):
+#     pass
+#     for i in range(a.)
+#
+# a = sorted([int(i) for i in open('C:/Users/Gregoriy Mukhin/Downloads/26 (3).txt')])
+# print(a)
+#
+#
+# for i in range(sum(a)):

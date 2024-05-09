@@ -27,18 +27,18 @@
 #     max_counter = max(max_counter, counter)
 # print(max_counter)
 
-
-for i1 in range(1, 9):
-    for i2 in range(1, 9):
-        for i3 in range(1, 9):
-            for i4 in range(1, 9):
-                for i5 in range(1, 9):
-                    for i6 in range(9):
-                        for i7 in range(9):
-                            for i8 in range(9):
-                                for i9 in range(9):
-                                    for i0 in range(9):
-                                        for i11 in range(9):
-                                            if i
-                                            a = str(i1) + str(i2) + str(i3) + str(i4) + str(i5) + str(i6) + str(i7) + str(i8) + str(i9) + str(i0) + str(i11)
-
+#
+# for i1 in range(1, 9):
+#     for i2 in range(1, 9):
+#         for i3 in range(1, 9):
+#             for i4 in range(1, 9):
+#                 for i5 in range(1, 9):
+#                     for i6 in range(9):
+#                         for i7 in range(9):
+#                             for i8 in range(9):
+#                                 for i9 in range(9):
+#                                     for i0 in range(9):
+#                                         for i11 in range(9):
+#                                             if i
+#                                             a = str(i1) + str(i2) + str(i3) + str(i4) + str(i5) + str(i6) + str(i7) + str(i8) + str(i9) + str(i0) + str(i11)
+#
